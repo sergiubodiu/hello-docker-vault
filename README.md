@@ -73,6 +73,7 @@ export VAULT_ADDR='http://127.0.0.1:8200'
 
 ### Initialize new vault cluster with 5 key shares
 
+```bash
 vault operator init -key-shares=5 -key-threshold=3
 Unseal Key 1: okFz8kYG3Lr7+VC5WHp9FpxbluZCK+RLB2si7peBfdCx
 Unseal Key 2: tBApy7ogda2eqoHbMenyTlVOuJQW4bdK7UY+WZA4H5Pw
@@ -92,6 +93,7 @@ reconstruct the master key, Vault will remain permanently sealed!
 
 It is possible to generate new unseal keys, provided you have a quorum of
 existing unseal keys shares. See "vault operator rekey" for more information.
+```
 
 ### Ensure the vault is unsealed
 
